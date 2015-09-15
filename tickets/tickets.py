@@ -14,10 +14,16 @@ def tickets(age):
             tickets(age)
         elif 0 <= age <= 17:
             print "10SEK"
+            age = raw_input()
+            tickets(age)
         elif 18 <= age <= 64:
             print "20SEK"
+            age = raw_input()
+            tickets(age)
         elif age >= 65:
             print "15SEK"
+            age = raw_input()
+            tickets(age)
     else:
         print "You need to input a number!"
         age = raw_input()
