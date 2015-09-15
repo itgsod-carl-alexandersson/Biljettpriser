@@ -6,7 +6,7 @@
 
 
 def tickets(age):
-    if hasnumbers(inputstring=age) == True:
+    if age.isdigit() is True:
         age = int(age)
         if age < 0:
             print "You can't input negative numbers!"
@@ -22,7 +22,3 @@ def tickets(age):
         print "You need to input a number!"
         age = raw_input()
         tickets(age)
-
-
-def hasnumbers(inputstring):
-    return any(char.isdigit() for char in inputstring)
