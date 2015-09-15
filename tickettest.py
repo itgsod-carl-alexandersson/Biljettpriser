@@ -1,6 +1,4 @@
-#from ticket import yourfunction
+from tickets.tickets import tickets
 
-
-
-
-#test your function here
+age = raw_input()
+tickets(age)
